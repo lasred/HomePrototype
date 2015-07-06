@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home's BOX</title>
+		<link rel="stylesheet" type="text/css" href="Home.css" />
+		<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<img id="header_image" src="home_header.png" />
+		</div>
+		<table>
+			<tr>
+				<td id="no_border"><img class="menu_option" src="menu_icon.png" /></td>
+				<td id="right_next_to">HOME'S BOX</td>
+				<td>Campaign</td> <td>TV Ads</td> <td>Video Archive</td> <td>House Showcases</td> <td>House Data</td> <td>Special</td>
+			</tr>
+		</table>
+		<div id="rest_contents">
+				<a href="#">HOME'S TOP</a> > HOME's BOX
+				<div id="picture_intro_background">
+					<div id="description" >
+						Loreum ipsum doloar sit amet, consectetur adipiscing
+						elit. Etiam in sagittis nisl. Donec et convallis eros, quis volutpat.
+					</div>
+					<img id="inspector" src="inspector.PNG" /> <img id="city" src="city.PNG" />					
+				</div>
+				<div id="video">
+					<h1><img src="mark.png" /><class="vertical" id="vertical">PickUP Contents</span></h1>
+					<h2 id="rounded">consectetur adipiscing elit</h2>
+					<img id="left_arrow" src="left_arrow.png" />
+					<iframe id="youtube_video" width="650" height="345" src="https://www.youtube.com/embed/9D7aNV7hoK4">  </iframe>
+					<img id="right_arrow" src="right_arrow.png" />
+				</div>
+				<div id="updates" data-ng-app="" data-ng-init="titles=['Campaign','House Showcases']"> 
+					<h1 id="vertical"><img src="mark.png" />Recent Updates</h1>
+					<div id="{{x}}" class="repeat" data-ng-repeat="x in titles">
+						<div id="tofloat"> 
+							<div id="headline">{{x}}</div> <BR />  
+							<div id="time_stamp">2014.02.14</div>
+						</div>
+						<p>
+							Loreum ipsum doloar sit amet, consectetur adipiscing
+							elit. Etiam in sagittis nisl. Donec et convallis eros, quis volutpat.
+							Loreum ipsum doloar sit amet, consectetur adipiscing
+							elit. Etiam in sagittis nisl. Donec et convallis eros, quis volutpat.
+					       </p> 
+					</div>	
+				</div>
+				<div> <img src="campaign.png" /><span id="title" class="vertical">Campaign</span>
+				</div>
+				
+			
+		
+	</body>
+	
+</html>
