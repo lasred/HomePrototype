@@ -16,7 +16,7 @@
 				<td>Campaign</td> <td>TV Ads</td> <td>Video Archive</td> <td>House Showcases</td> <td>House Data</td> <td>Special</td>
 			</tr>
 		</table>
-		<div id="rest_contents">
+		<div id="rest_contents" data-ng-app="">
 				<a href="#">HOME'S TOP</a> > HOME's BOX
 				<div id="picture_intro_background">
 					<div id="description" >
@@ -32,7 +32,7 @@
 					<iframe id="youtube_video" width="650" height="345" src="https://www.youtube.com/embed/9D7aNV7hoK4">  </iframe>
 					<img id="right_arrow" src="right_arrow.png" />
 				</div>
-				<div id="updates" data-ng-app="" data-ng-init="titles=['Campaign','House Showcases']"> 
+				<div id="updates"  data-ng-init="titles=['Campaign','House Showcases']"> 
 					<h1 id="vertical"><img src="mark.png" />Recent Updates</h1>
 					<div id="{{x}}" class="repeat" data-ng-repeat="x in titles">
 						<div id="tofloat"> 
@@ -44,11 +44,22 @@
 							elit. Etiam in sagittis nisl. Donec et convallis eros, quis volutpat.
 							Loreum ipsum doloar sit amet, consectetur adipiscing
 							elit. Etiam in sagittis nisl. Donec et convallis eros, quis volutpat.
-					       </p> 
-					</div>	
+					    </p> 
+					</div>
+					
 				</div>
-				<div> <img src="campaign.png" /><span id="title" class="vertical">Campaign</span>
+				<div data-ng-init="sections=[{title: 'Campaign', pictorial:'campaign.png'},
+			 {title: 'TV Ads', pictorial:'tv_adds.png'} , {title:'Video Archive',pictorial: 'video_archive.png'},
+		{title: 'House Showcases', pictorial: 'house_showcases.png'}]" >
+					<div id="section"  data-ng-repeat="x in sections"> 
+						<img src={{x.pictorial}} align="top" /><span id="title">{{x.title}}</span><BR />
+						<p class="inline blue"> </p> <p class="inline blue"></p> <p class="inline blue"></p> <BR />
+						<p class="inline white"> Lorem ipsum dolor sit amet consectetur posuere </p> 
+						<p class="inline white"> Lorem ipsum dolor sit amet consectetur posuere </p> 
+						<p class="inline white"> Lorem ipsum dolor sit amet consectetur posuere</p>
+					</div>
 				</div>
+			</div>
 				
 			
 		
