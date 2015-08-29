@@ -1,4 +1,4 @@
 # HomePrototype
 
 Implemented a client tasked UI(called Home) from prototype storyboard with CSS, HTML, JavaScript, and JQuery(JavaScript Library).
-The prototype is supported on all the latest browsers.
+The prototype is supported on all the latest web browsers. (Google Chome, Microsoft IE, Mozilla Firefox 
